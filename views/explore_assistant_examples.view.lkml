@@ -9,7 +9,18 @@ view: explore_assistant_examples {
   dimension: explore_id {
     type: string
     description: "Explore id of the explore to pull examples for in a format of -\u003e lookml_model:lookml_explore"
-    sql: ${TABLE}.explore_id ;;
+  }
+  dimension: connection {
+    type: string
+  }
+  dimension: explore_name {
+    type: string
+  }
+  dimension: model_name {
+    type: string
+  }
+  dimension: model_set {
+    type: string
   }
   measure: count {
     type: count
