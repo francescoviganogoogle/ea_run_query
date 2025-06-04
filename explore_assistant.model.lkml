@@ -5,6 +5,10 @@ include: "/views/*.view.lkml"
 
 ### Example, Refinement & Sample Fetching
 explore: explore_assistant_examples {
+  access_filter: {
+    field: model_set
+    user_attribute: model_set
+  }
   join: explore_assistant_refinement_examples {
     type: left_outer
     relationship: one_to_one
@@ -20,5 +24,8 @@ explore: explore_assistant_examples {
 
 ### BQML Model Access
 explore: explore_assistant {}
+
+### BQ Logging
+explore: explore_assistant_logging {}
 
 ##### END #####

@@ -29,25 +29,31 @@ constant: LOOKER_BIGQUERY_CONNECTION_NAME {
 # Only necessary for the BigQuery Backend install type.
 # Can be left as an empty string for Cloud Function backend installs.
 constant: BQML_REMOTE_CONNECTION_MODEL_ID {
-  value: "explore_assistant_llm"
+  value: "looker-demo-392616.explore_assistant.explore_assistant_llm"
+  export: override_optional
+}
+
+# EXPLORE_ASSISTANT_LOGGING_TABLE_NAME is the name of the table that holds the logging data
+constant: EXPLORE_ASSISTANT_LOGGING_TABLE_NAME {
+  value: "looker-demo-392616.explore_assistant.explore_assistant_logging"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME is the name of the table that holds the example training data
 constant: EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME {
-  value: "explore_assistant_examples"
+  value: "looker-demo-392616.explore_assistant.explore_assistant_examples"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_REFINEMENT_EXAMPLES_TABLE_NAME is the name of the table that holds the refinement example training data
 constant: EXPLORE_ASSISTANT_REFINEMENT_EXAMPLES_TABLE_NAME {
-  value: "explore_assistant_refinement_examples"
+  value: "looker-demo-392616.explore_assistant.explore_assistant_refinement_examples"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_SAMPLES_TABLE_NAME is the name of the table that holds the samples
 constant: EXPLORE_ASSISTANT_SAMPLES_TABLE_NAME {
-  value: "explore_assistant_samples"
+  value: "looker-demo-392616.explore_assistant.explore_assistant_samples"
   export: override_optional
 }
 
