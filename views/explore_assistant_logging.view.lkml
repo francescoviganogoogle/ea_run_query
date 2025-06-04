@@ -1,5 +1,6 @@
 view: explore_assistant_logging {
   derived_table: {
+    persist_for: "0 second"
     create_process: {
       sql_step:
       INSERT `@{EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME}` (
@@ -18,7 +19,12 @@ view: explore_assistant_logging {
       ,{% parameter explore_url %}
       ,{% parameter timestamp %}
       );;
+      sql_step: SELECT 1 as col ;;
     }
+  }
+  dimension: col {
+    type: string
+    sql: ${TABLE}.col ;;
   }
   parameter: user {
     type: string
