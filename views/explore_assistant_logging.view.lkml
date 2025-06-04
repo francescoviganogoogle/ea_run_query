@@ -3,7 +3,7 @@ view: explore_assistant_logging {
     datagroup_trigger: logging
     create_process: {
       sql_step:
-      INSERT `@{EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME}` (
+      INSERT `@{EXPLORE_ASSISTANT_LOGGING_TABLE_NAME}` (
       user
       , model
       , explore
@@ -19,7 +19,7 @@ view: explore_assistant_logging {
       ,{% parameter explore_url %}
       ,{% parameter timestamp %}
       );;
-      sql_step: SELECT 1 as col ;;
+      sql_step: SELECT 1 as col FROM ${SQL_TABLE_NAME} ;;
     }
   }
   dimension: col {
