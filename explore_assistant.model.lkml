@@ -1,6 +1,10 @@
 connection: "@{LOOKER_BIGQUERY_CONNECTION_NAME}"
 include: "/views/*.view.lkml"
 
+
+datagroup: logging {
+  interval_trigger: "0 second"
+}
 ##### Explore Assistant #####
 
 ### Example, Refinement & Sample Fetching

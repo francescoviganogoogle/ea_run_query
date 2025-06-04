@@ -1,6 +1,6 @@
 view: explore_assistant_logging {
   derived_table: {
-    persist_for: "0 second"
+    datagroup_trigger: logging
     create_process: {
       sql_step:
       INSERT `@{EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME}` (
