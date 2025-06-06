@@ -59,7 +59,7 @@ constant: EXPLORE_ASSISTANT_SAMPLES_TABLE_NAME {
 
 application: explore_assistant {
   label: "Explore Assistant"
-  file: "explore_assistant.js"
+  file: "bundle.js"
   # url: "https://localhost:8080/bundle.js"
   entitlements: {
     core_api_methods: ["lookml_model_explore","run_inline_query","run_query","create_query","update_user_attribute","create_user_attribute","all_user_attributes","me"]
