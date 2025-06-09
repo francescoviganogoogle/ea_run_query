@@ -3,7 +3,7 @@ project_name: "explore_assistant"
 # This is the Looker Connection to a dataset that has the explore_assistant schema.
 # Through this connection, the 'explore_assistant' schema with examples, refniement_examples and assistant_sample should all exist.
 constant: LOOKER_BIGQUERY_CONNECTION_NAME {
-  value: "sample_bigquery_connection"
+  value: "looker-private-demo"
   export: override_required
 }
 
