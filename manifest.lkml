@@ -1,9 +1,9 @@
-project_name: "explore_assistant"
+project_name: "ea_run_query"
 
 # This is the Looker Connection to a dataset that has the explore_assistant schema.
 # Through this connection, the 'explore_assistant' schema with examples, refniement_examples and assistant_sample should all exist.
 constant: LOOKER_BIGQUERY_CONNECTION_NAME {
-  value: "looker-private-demo"
+  value: "ea_run_query"
   export: override_required
 }
 
@@ -11,31 +11,31 @@ constant: LOOKER_BIGQUERY_CONNECTION_NAME {
 # Only necessary for the BigQuery Backend install type.
 # Can be left as an empty string for Cloud Function backend installs.
 constant: BQML_REMOTE_CONNECTION_MODEL_ID {
-  value: "gcp-project.explore_assistant.explore_assistant_llm"
+  value: "explore_assistant.explore_assistant_llm"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_LOGGING_TABLE_NAME is the name of the table that holds the logging data
 constant: EXPLORE_ASSISTANT_LOGGING_TABLE_NAME {
-  value: "gcp-project.explore_assistant.explore_assistant_logging"
+  value: "explore_assistant_ea_run_query.explore_assistant_logging"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME is the name of the table that holds the example training data
 constant: EXPLORE_ASSISTANT_EXAMPLES_TABLE_NAME {
-  value: "gcp-project.explore_assistant.explore_assistant_examples"
+  value: "explore_assistant_ea_run_query.explore_assistant_examples_2"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_REFINEMENT_EXAMPLES_TABLE_NAME is the name of the table that holds the refinement example training data
 constant: EXPLORE_ASSISTANT_REFINEMENT_EXAMPLES_TABLE_NAME {
-  value: "gcp-project.explore_assistant.explore_assistant_refinement_examples"
+  value: "explore_assistant_ea_run_query.explore_assistant_refinement_examples"
   export: override_optional
 }
 
 # EXPLORE_ASSISTANT_SAMPLES_TABLE_NAME is the name of the table that holds the samples
 constant: EXPLORE_ASSISTANT_SAMPLES_TABLE_NAME {
-  value: "gcp-project.explore_assistant.explore_assistant_samples"
+  value: "explore_assistant_ea_run_query.explore_assistant_samples"
   export: override_optional
 }
 

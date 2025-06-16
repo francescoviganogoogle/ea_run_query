@@ -14,4 +14,5 @@ view: explore_assistant_samples {
   measure: count {
     type: count
   }
+
 }
