@@ -11,7 +11,7 @@ datagroup: logging {
 explore: explore_assistant_examples {
   access_filter: {
     field: model_set
-    user_attribute: model_set
+    user_attribute: explore_assistant_model_sets
   }
   join: explore_assistant_refinement_examples {
     type: left_outer
