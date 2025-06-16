@@ -11,7 +11,7 @@ constant: LOOKER_BIGQUERY_CONNECTION_NAME {
 # Only necessary for the BigQuery Backend install type.
 # Can be left as an empty string for Cloud Function backend installs.
 constant: BQML_REMOTE_CONNECTION_MODEL_ID {
-  value: "looker-explore-assistant-2025.explore_assistant.explore_assistant_llm"
+  value: "explore_assistant_ea_run_query.explore_assistant_llm"
   export: override_optional
 }
 
