@@ -19,8 +19,8 @@ view: explore_assistant_logging {
       ,{% parameter explore_url %}
       ,{% parameter timestamp %}
       );;
-      sql_step: SELECT 1 as col FROM ${SQL_TABLE_NAME} ;;
-
+      #sql_step: SELECT 1 as col FROM ${SQL_TABLE_NAME} ;;
+      sql_step: SELECT 1 as col ;;
     }
   }
   dimension: col {
