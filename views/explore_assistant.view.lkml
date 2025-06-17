@@ -14,6 +14,7 @@ view: explore_assistant {
       0.98 AS top_p,
       true AS flatten_json_output,
       1 AS top_k)
+
       ) ;;
   }
 
