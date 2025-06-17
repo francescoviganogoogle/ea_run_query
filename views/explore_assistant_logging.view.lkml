@@ -12,7 +12,7 @@ view: explore_assistant_logging {
       , timestamp
       )
       VALUES(
-      {% parameter user %}
+       {% parameter user %}
       ,{% parameter model %}
       ,{% parameter explore %}
       ,{% parameter question %}
@@ -29,20 +29,26 @@ view: explore_assistant_logging {
   }
   parameter: user {
     type: string
+    default_value: ""
   }
   parameter: model {
     type: string
-  }
+    default_value: ""
+    }
   parameter: explore {
     type: string
-  }
+    default_value: ""
+    }
   parameter: question {
     type: string
-  }
+    default_value: ""
+    }
   parameter: explore_url {
     type: string
-  }
+    default_value: ""
+    }
   parameter: timestamp {
     type: string
-  }
+    default_value: ""
+    }
 }
