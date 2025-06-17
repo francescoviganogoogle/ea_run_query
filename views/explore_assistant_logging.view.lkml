@@ -20,7 +20,7 @@ view: explore_assistant_logging {
       ,{% parameter timestamp %}
       );;
       #sql_step: SELECT 1 as col FROM ${SQL_TABLE_NAME} ;;
-      sql_step: SELECT 1 as col ;;
+      sql_step: CREATE TABLE IF NOT EXISTS ${SQL_TABLE_NAME} (col string) ;;
     }
   }
   dimension: col {
