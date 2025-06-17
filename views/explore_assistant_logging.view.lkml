@@ -20,6 +20,7 @@ view: explore_assistant_logging {
       ,{% parameter timestamp %}
       );;
       sql_step: SELECT 1 as col  ;;
+
     }
   }
   dimension: col {
