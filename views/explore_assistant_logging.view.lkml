@@ -1,5 +1,5 @@
 view: explore_assistant_logging {
-  sql_table_name:  `looker-explore-assistant-2025.explore_assistant_ea_run_query.explore_assistant_logging` ;;
+  sql_table_name:  `@{EXPLORE_ASSISTANT_LOGGING_TABLE_NAME}` ;;
   # derived_table: {
   #   datagroup_trigger: logging
   #   create_process: {
